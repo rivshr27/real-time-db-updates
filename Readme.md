@@ -76,7 +76,7 @@ npm start
 ---
 
 ##  Project Structure
-
+![Folder Structure](./images/folder-structure.png)
 ```
 real-time-db-updates/
 ├── images/             # Screenshots & diagrams
@@ -119,7 +119,7 @@ curl -X PUT http://localhost:3000/api/orders/1 \
 
 ### Real-time Updates
 
-![Live Updates](./images/live-updates.png)
+![Live Updates](./images/web-interface.png)
 
 
 ---
