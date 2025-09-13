@@ -119,7 +119,7 @@ curl -X PUT http://localhost:3000/api/orders/1 \
 
 ### Real-time Updates
 
-![Live Updates](./images/web-interface.png)
+![Live Updates](./images/updates-img.png)
 
 
 ---
