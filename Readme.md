@@ -125,7 +125,7 @@ curl -X PUT http://localhost:3000/api/orders/1 \
 
 ---
 
-##  Points
+##  Interview Talking Points
 
 * **Triggers vs. Binlog:** chose triggers for portability and simplicity
 * **WebSockets vs. SSE:** WebSockets enable bidirectional communication
@@ -134,7 +134,7 @@ curl -X PUT http://localhost:3000/api/orders/1 \
 
 ---
 
-## 📄 License
+##  License
 
 MIT License
 
