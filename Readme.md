@@ -7,7 +7,7 @@ A production-ready real-time system that notifies clients when data changes in a
 
 ---
 
-##  Architecture Overview
+## Architecture Overview
 
 **Flow:**
 
@@ -36,16 +36,12 @@ Database Change → Trigger → Change Log Table → Change Listener → WebSock
 
 ---
 
-## Installation
+##  Installation
 
 ### 1. Setup Project
 
 ```bash
-mkdir real-time-db-updates
-cd real-time-db-updates
-npm init -y
-npm install express mysql2 ws dotenv cors
-npm install --save-dev nodemon
+npm install
 ```
 
 ### 2. Environment Configuration
@@ -83,11 +79,17 @@ npm start
 
 ```
 real-time-db-updates/
-├── server.js          # Express + WebSocket server
-├── database.js        # MySQL connection
-├── changeListener.js  # Polling + broadcasting
-├── client.html        # Web dashboard
+├── images/             # Screenshots & diagrams
+│   ├── web-interface.png
+│   ├── live-updates.png
+│   └── message-flow.png
+├── changeListener.js
+├── client.html
+├── database.js
+├── server.js
+├── schema.sql
 ├── .env
+├── package.json
 └── README.md
 ```
 
@@ -113,19 +115,16 @@ curl -X PUT http://localhost:3000/api/orders/1 \
 
 ### Web Interface
 
-```md
 ![Web Interface](./images/web-interface.png)
-```
 
 ### Real-time Updates
 
-```md
 ![Live Updates](./images/live-updates.png)
-```
+
 
 ---
 
-##  Interview Talking Points
+## 🎯 Interview Talking Points
 
 * **Triggers vs. Binlog:** chose triggers for portability and simplicity
 * **WebSockets vs. SSE:** WebSockets enable bidirectional communication
@@ -134,7 +133,7 @@ curl -X PUT http://localhost:3000/api/orders/1 \
 
 ---
 
-##  License
+## 📄 License
 
 MIT License
 
